@@ -19,12 +19,7 @@ def reduce(src, starting_point = 0)
     i = 1
   end
   while i < src.count do
-    if newVal
-      newVal = yield(newVal, src[i])
-    else
-      newVal = false
-      return newVal
-    end
+    newVal = yield(newVal, src[i])
     i+=1
   end
   return newVal
