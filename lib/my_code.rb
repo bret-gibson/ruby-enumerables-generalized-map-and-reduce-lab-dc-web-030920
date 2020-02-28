@@ -22,7 +22,7 @@ def reduce(src, starting_point = 0)
     newVal = yield(newVal, src[i])
     i+=1
   end
-  if src[i]
+  if newVal
     newVal = true
   else
     newVal = false
