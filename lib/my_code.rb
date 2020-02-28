@@ -23,7 +23,7 @@ def reduce(src, starting_point = 0)
     i+=1
   end
   if newVal
-    newVal = true
+    return newVal
   else
     newVal = false
     return newVal
